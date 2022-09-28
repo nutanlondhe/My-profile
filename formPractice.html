@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>personalForm</title>
-       
-    </head>
-    <body>
-        <iframe="my_frame" width="400" height="500" target="formPractice.html"> </iframe>
-<h2>Student Form</h2>
-        <form>
+
+<head>
+    <title>personalForm</title>
+    <link rel="shortcut icon" href="doll.webp" type="image/x-icon">
+    <style>
+        .nutan {
+            color: rgb(8, 8, 8);
+            background-color: bisque;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        h2.vish {
+            background-color: ghostwhite;
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            font text-decoration-color: border:;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+    <h2 class="vish"><strong>Student Form</strong></h2>
+    <details>
+        <summary>Family Details</summary>
+        <ul>
+            <li>Father Name :Prakash Londhe</li>
+            <li>Mother Name :Jayashree Londhe</li>
+            <li>Brother Name :yogesh Londhe</li>
+
+        </ul>
+
+    </details>
+</header>
+    <hr>
+     
+        <div class="nutan">
             <table>
-            <tbody>
+                <tbody>
                     <tr>
                         <td><label>Full Name :&nbsp; &nbsp;</label></td>
                         <td><input type="text" placeholder="Full Name Only" required></td>
@@ -21,33 +52,24 @@
                     </tr>
                     <tr>
                         <td><label>Phone Number :</label></td>
-                        <td><input type="text" placeholder="+918088802020" required </td>
-                    </tr>
-                    <tr>
+                        <td><input type="text" placeholder="+918088802020" required </td> </tr> <tr>
                         <td><label>Profile :</label></td>
-                        <td><input type="file" required </td>
-                    
-                    </tr>
-                    <tr>
+                        <td><input type="file" required </td> </tr> <tr>
                         <td><label>Email Address :</label></td>
-                        <td><input type="text" placeholder="abc@gmail.com" </td>
-                        &nbsp;&nbsp;
-                        &nbsp;
-                    </tr>
-                    <tr>
+                        <td><input type="text" placeholder="abc@gmail.com" </td> &nbsp;&nbsp; &nbsp; </tr> <tr>
                         <td><label>Date Of Birth</label></td>
                         <td><input type="date"> </td>
                     </tr>
                     <tr>
                         <td><label>Gender</label></td>
                         <td><input type="radio"><label>Male</label>
-                        <input type="radio" checked><label>Female</label> 
-                        <input type="radio"><label>Others</label></td>
+                            <input type="radio" checked><label>Female</label>
+                            <input type="radio"><label>Others</label></td>
                     </tr>
                     <tr>
                         <td><label>Marital Status</label></td>
                         <td><input type="radio"><label>Yes</label>
-                        <input type="radio" name="no" checked><label>No</label></td>
+                            <input type="radio" name="no" checked><label>No</label></td>
                     </tr>
                     <tr>
                         <td><label>Developer :</label></td>
@@ -78,25 +100,44 @@
                     <tr>
                         <td><label>Country :</label></td>
                         <td>
-                        <select>
-                            <option>US</option>
-                            <option>JAPAN</option>
-                            <option>INDIA</option>
-                        
-                        </select>
-                    </td>
+                            <select>
+                                <option>US</option>
+                                <option>JAPAN</option>
+                                <option>INDIA</option>
+
+                            </select>
+                        </td>
                     </tr>
                     <tr>
                         <td><label>Training</label></td>
                         <td><input type="checkbox"><label>Angular</label>
-                        <input type="checkbox"><label>React</label>
-                        <input type="checkbox"><label>Java</label>
-                        <input type="checkbox" checked> <label>testing</label></td>
+                            <input type="checkbox"><label>React</label>
+                            <input type="checkbox"><label>Java</label>
+                            <input type="checkbox" checked> <label>testing</label></td>
                     </tr>
-            
-            </tbody>
+
+                </tbody>
+        </div>
         </table>
 
-        </form>
-    </body>
-        </html>
+
+    </form>
+    <hr>
+    <details>
+        <summary>My Favourite images</summary>
+    
+    <img src="view.jpg" src="home.html" target="my_frame" height="400" width="500">
+    <img src="sunset.jpg" src="home.html" target="my_frame" height="400" width="500">
+</details>
+<details>
+    <summary>My Favourite Videos</summary>
+    <video width="400" height="400" autoplay controls muted>
+        <source src="emotionalVideo.mp4" type="video/mp4">
+
+        <video width="400" height="400" autoplay controls muted>
+            <source src="fav.html2.mp4" type="video/mp4">
+    </video>
+</details>
+</body>
+
+</html>
