@@ -1,80 +1,154 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Personal Details</title>
-    </head>
-    <body>
-        <h2><strong>&nbsp; &nbsp;&nbsp; Personal Details</strong></h2>
-        <form>
-            <table>
-                <tbody>
-                    <tr>
-                        <td><label>Full Name</label></td> &nbsp; &nbsp
-                        <td><input type="text" placeholder="Nutan Prakash Londhe" autofocus </td>
-                    </tr>
-                    <tr>
-                        <td><label>Email Address</label> </td>
-                        <td><input type="text" placeholder="abc@gmail.com" required </td>
-                    </tr>
-                    <tr>
-                        <td><label>Password</label></td>
-                        <td><input type="Password" placeholder="Password" required </td>
-                    </tr>
-                    <tr>
-                        <td><label>Contact Number</label></td>
-                        <td><input type="text" placeholder="8898996006" </td>
-                    </tr>
-                    <tr>
-                        <td><label>Profile Photo</label></td>
-                        <td><input type="file"> </td>
-                    </tr>
-                    <tr>
-                        <td><label>Date Of Birth</label></td>
-                        <td><input type="Date" </td>
-                    </tr>
-                    <tr>
-                        <td><label>Gender</label></td>
-                        <td><input type="radio"><label>Male</label>
+
+<head>
+    <title>Registration Form</title>
+    <style>
+        input[type="text"] {
+            color: rgb(14, 12, 12);
+            background-color: rgb(218, 208, 209);
+            width="200px"
+            text-transform: uppercase;
+
+
+        }
+
+        .table,
+        tbody,
+        tr,
+        td,
+            {
+            margin: 08px;
+            padding: 08px;
+            border-radius: 3px;
+
+        }
+
+        body {
+            background-image: url(skyimg.jpg);
+            background-repeat: no-repeat;
+            background-size: 1400px 1400px;
+            background-color: antiquewhite;
+            border-radius: 3px;
+
+        }
+
+        input[type="Submit"] {
+            background-color: rgb(139, 185, 121);
+            color: whitesmoke;
+            width: 100px;
+            border-radius: 10px;
+            height: 30px;
+
+
+        }
+
+
+
+        #reset {
+            background-color: rgb(115, 168, 168);
+            color: whitesmoke;
+            width: 100px;
+            border-radius: 10px;
+            height: 30px;
+
+        }
+
+        .date {
+            background-color: antiquewhite;
+            color: black;
+
+            border-radius: 10px;
+
+
+        }
+        .table:hover{
+            background-color: rgb(8, 8, 8);
+            color:rgb(250, 181, 181)
+            
+        }
+        .heading:hover{
+            background-color: rgb(121, 230, 144);
+            color: rgb(13, 13, 14);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <marquee direction="left" width="500px" height="300px" behaviour="sliding" >
+            <h2>Student Registration Form</h2>
+             </marquee> -->
+
+             <h2 class="heading"><strong>Student Registration Form</strong></h2>
+
+
+
+    <form>
+
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td><label class="label">Full Name</label></td> &nbsp; &nbsp
+                    <td><input type="text" placeholder="Nutan Prakash Londhe" autofocus> </td> </tr> <tr>
+                    <td><label>Email Address</label> </td>
+                    <td><input type="text" placeholder="abc@gmail.com" required </td> </tr> <tr>
+                    <td><label>Password</label></td>
+                    <td><input type="Password" placeholder="Password" required </td> </tr> <tr>
+                    <td><label>Contact Number</label></td>
+                    <td><input type="text" placeholder="8898996006" </td> </tr> <tr>
+                    <td><label>Profile Photo</label></td>
+                    <td><input type="file"> </td>
+                </tr>
+                <tr>
+                    <td><label>Date Of Birth</label></td>
+                    <td class="date"><input type="Date" </td> </tr> <tr>
+                    <td><label>Gender</label></td>
+                    <td><input type="radio"><label>Male</label>
                         <input type="radio" name="gender" checked><label>Female</label>
                         <input type="radio"><label>Others</label></td>
-                    </tr>
-                    <tr>
-                        <td><label>Marital Status</label></td>
-                        <td><input type="radio"><label>Yes</label>
-                            <input type="radio" name="No" checked><label>No</label>label>
-                        
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label>Training</label></td>
-                        <td><input type="checkbox"><label>Angular</label>
-                            <input type="checkbox"><label>React</label>
-                            <input type="checkbox"><label>Java</label>
-                            <input type="checkbox" checked><label>Testing</label>
-                            </td>
-                    </tr>
-                    <tr>
-                        <td><Label>Developer</Label></td>
-                        <td>
-                            <select>
-                                <option>BSC Chemistry</option>
-                                <option>MBA</option>
-                                <option>B.E</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label>Country</label></td>
-                        <td><input type="test" value="India" disable  </td>
-                    </tr>
-                    <tr>
-                        <td><label>Permanant Address</label></td>
-                        <td><textarea row="60" cols="40"></textarea> </td>
-                    </tr>
-                </tbody>
-            </table>
-        </form>
-    </body>
-    
-    
+                </tr>
+                <tr>
+                    <td><label>Marital Status</label></td>
+                    <td><input type="radio"><label>Yes</label>
+                        <input type="radio" name="No" checked><label>No</label>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Training</label></td>
+                    <td><input type="checkbox"><label>Angular</label>
+                        <input type="checkbox"><label>React</label>
+                        <input type="checkbox"><label>Java</label>
+                        <input type="checkbox" checked><label>Testing</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><Label>Developer</Label></td>
+                    <td>
+                        <select>
+                            <option>BSC Chemistry</option>
+                            <option>MBA</option>
+                            <option>B.E</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Country</label></td>
+                    <td><input type="test" value="India" disable </td> </tr> <tr>
+                    <td><label>Permanant Address</label></td>
+                    <td><textarea row="60" cols="40"></textarea> </td>
+                </tr>
+                <tr>
+                    <td><input type="Submit"></td>
+                    <td><input type="Reset" id="reset"></td>
+                </tr>
+                <!--<p><a href="blank.html" target="abc"> Our Contact Details</a>
+                        <iframe name="abc" frameborder="0" width="300" height="140">contact details</iframe>
+                    </p> -->
+            </tbody>
+        </table>
+    </form>
+</body>
+
+
 </html>
